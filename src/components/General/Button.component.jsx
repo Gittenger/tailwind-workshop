@@ -1,20 +1,13 @@
 import React from 'react'
 
 const btnStyles =
-	'py-2 px-4 font-semibold transition-all duration-300 font-button rounded shadow-md text-white bg-gray-800 hover:bg-gray-200 hover:text-black w-32'
+	'py-4 px-2 font-semibold font-button rounded shadow-md text-white bg-gray-800  w-28 transition-all duration-300 border-2 border-transparent'
 
-const blueStyles = 'bg-blue-700 hover:text-blue-700'
-
-const greenStyles = 'bg-green-700 hover:text-green-700'
+const stateStyles =
+	'hover:bg-gray-200 hover:text-black active:bg-green-700 active:border-gray-50'
 
 export const Button = ({ color }) => (
-	<button
-		className={`${btnStyles} ${
-			color === 'blue' ? blueStyles : color === 'green' ? greenStyles : ''
-		}`}
-	>
-		Click me
-	</button>
+	<button className={`${btnStyles + ' ' + stateStyles}`}>Click me</button>
 )
 
 export default Button

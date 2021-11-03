@@ -1,17 +1,28 @@
 // const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: [],
+  purge: {
+    // enabled: true,
+    // content: ['./src/**/*.jsx', './src/**/*.css'],
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {},
       fontFamily: {
         'button': ['Georama'],
+      },
+      borderWidth: {
+        '3': '3px',
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      borderWidth: ['focus'],
+      borderColor: ['active'],
+      backgroundColor: ['active'],
+    },
   },
-  plugins: [],
-};
+  plugins: [require('@tailwindcss/forms')],
+}

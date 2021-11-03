@@ -19,4 +19,11 @@
 }
 
 @layer components {
+	.layout {
+		@apply flex flex-col justify-center items-center container mx-auto;
+	}
+
+	.content {
+		@apply flex flex-col justify-center items-center;
+	}
 }
