@@ -5,7 +5,7 @@ module.exports = {
     // enabled: true,
     // content: ['./src/**/*.jsx', './src/**/*.css'],
   },
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       colors: {},
@@ -22,6 +22,7 @@ module.exports = {
       borderWidth: ['focus'],
       borderColor: ['active'],
       backgroundColor: ['active'],
+      fill: ['hover'],
     },
   },
   plugins: [require('@tailwindcss/forms')],
