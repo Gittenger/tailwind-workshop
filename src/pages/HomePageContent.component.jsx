@@ -4,9 +4,9 @@ import CIndex from '../components/components.index.js'
 import images from '../assets/img-index.js'
 
 const HomePageContent = () => {
-  const { Button, Login, IconLink } = CIndex
+  const { Button, Login, IconLink, IconListItem } = CIndex
   const {
-    svg: { Facebook, Instagram, Email, ChevronUp },
+    tiny: { Bluetooth, Chrome, Firefox, Folder, Vlc },
   } = images
 
   useEffect(() => {
@@ -15,7 +15,31 @@ const HomePageContent = () => {
 
   return (
     <>
-      <IconLink border="rounded" to="/page" background SvgComponent={Email} />
+      <IconListItem
+        imgSrc={Folder}
+        textContent="Home Folder"
+        orientation="right"
+      />
+      <IconListItem
+        imgSrc={Chrome}
+        textContent="Google Chrome"
+        orientation="right"
+      />
+      <IconListItem
+        imgSrc={Firefox}
+        textContent="Firefox Browser"
+        orientation="right"
+      />
+      <IconListItem
+        imgSrc={Vlc}
+        textContent="VLC Media Player Settings"
+        orientation="right"
+      />
+      <IconListItem
+        imgSrc={Bluetooth}
+        textContent="Bluetooth Settings"
+        orientation="right"
+      />
     </>
   )
 }
