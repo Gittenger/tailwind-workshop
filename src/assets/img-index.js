@@ -7,6 +7,9 @@ import { ReactComponent as Facebook } from './icons/facebook.svg'
 import { ReactComponent as Instagram } from './icons/instagram.svg'
 import { ReactComponent as Email } from './icons/email.svg'
 import { ReactComponent as ChevronUp } from './icons/chevron-up.svg'
+import { ReactComponent as History } from './icons/history.svg'
+import { ReactComponent as Star } from './icons/star.svg'
+import { ReactComponent as XIcon } from './icons/x.svg'
 import Bluetooth from './tiny/bluetooth.png'
 import Firefox from './tiny/firefox.png'
 import Folder from './tiny/folder.svg'
@@ -24,6 +27,9 @@ export const images = {
     Instagram,
     Email,
     ChevronUp,
+    History,
+    XIcon,
+    Star,
   },
   tiny: {
     Bluetooth,
