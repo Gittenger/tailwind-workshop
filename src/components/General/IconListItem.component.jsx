@@ -1,6 +1,6 @@
 import React from 'react'
 
-const IconListItem = ({ imgSrc, altText, textContent, orientation }) => {
+const IconListItem = ({ imgSrc, altText, textContent, orientation, count }) => {
   const groupStyles = `flex w-full ${
     orientation === 'right' ? 'flex-row-reverse' : 'flex-row'
   }`
@@ -10,7 +10,10 @@ const IconListItem = ({ imgSrc, altText, textContent, orientation }) => {
   return (
     <div className={groupStyles}>
       <img className={iconStyles} src={imgSrc} alt={altText} />
-      <p className={textStyles}>{textContent}</p>
+      <p className={textStyles}>
+        {count && count + ' '}
+        {textContent}
+      </p>
     </div>
   )
 }
