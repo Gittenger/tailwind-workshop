@@ -17,11 +17,12 @@ const HomePageContent = () => {
   return (
     <>
       <div className="w-96">
-        <HistoryItem />
+        {/* <HistoryItem /> */}
         <IconListItem
           imgSrc={Bluetooth}
           textContent="Bluetooth Folder"
-          orientation="left"
+          orientation="right"
+          countBubble="33"
         />
         <div className="mt-10">
           <IconLink

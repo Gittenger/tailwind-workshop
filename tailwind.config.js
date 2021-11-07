@@ -23,6 +23,7 @@ module.exports = {
       borderColor: ['active'],
       backgroundColor: ['active'],
       fill: ['hover'],
+      fontWeight: ['dark'],
     },
   },
   plugins: [require('@tailwindcss/forms')],
