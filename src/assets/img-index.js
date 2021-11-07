@@ -15,6 +15,9 @@ import Firefox from './tiny/firefox.png'
 import Folder from './tiny/folder.svg'
 import Chrome from './tiny/google-chrome.png'
 import Vlc from './tiny/vlc.png'
+import ReactIcon from './icons/react.svg'
+import Git from './icons/git.svg'
+import Pug from './icons/pug.svg'
 
 export const images = {
   img: {
@@ -30,6 +33,9 @@ export const images = {
     History,
     XIcon,
     Star,
+    ReactIcon,
+    Pug,
+    Git,
   },
   tiny: {
     Bluetooth,
