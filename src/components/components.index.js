@@ -6,6 +6,7 @@ import HistoryItem from './General/HistoryItem.component.jsx'
 import IconLink from './General/IconLink.component.jsx'
 import IconListItem from './General/IconListItem.component.jsx'
 import Layout from './General/Layout.component.jsx'
+import LineItem from './General/LineItem.component.jsx'
 import Login from './General/Login.component.jsx'
 export const CIndex = {
   Button,
@@ -16,6 +17,7 @@ export const CIndex = {
   IconLink,
   IconListItem,
   Layout,
+  LineItem,
   Login,
 }
 export default CIndex
