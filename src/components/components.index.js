@@ -9,6 +9,7 @@ import IconListItem from './General/IconListItem.component.jsx'
 import Layout from './General/Layout.component.jsx'
 import LineItem from './General/LineItem.component.jsx'
 import Login from './General/Login.component.jsx'
+import VideoSkeleton from './General/VideoSkeleton.component.jsx'
 export const CIndex = {
   Button,
   Checkbox,
@@ -21,5 +22,6 @@ export const CIndex = {
   Layout,
   LineItem,
   Login,
+  VideoSkeleton,
 }
 export default CIndex

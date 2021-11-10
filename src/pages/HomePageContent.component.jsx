@@ -4,7 +4,14 @@ import CIndex from '../components/components.index.js'
 import images from '../assets/img-index.js'
 
 const HomePageContent = () => {
-  const { HistoryItem, IconLink, IconListItem, FooterColumn, LineItem } = CIndex
+  const {
+    HistoryItem,
+    IconLink,
+    IconListItem,
+    FooterColumn,
+    LineItem,
+    VideoSkeleton,
+  } = CIndex
   const {
     svg: { Pug, Git, ReactIcon, Facebook },
     tiny: { Bluetooth, Chrome, Firefox, Folder, Vlc },
@@ -52,10 +59,19 @@ const HomePageContent = () => {
           orientation="right"
           countBubble="33"
         /> */}
-        <div className="mt-10 space-y-2">
-          <FooterColumn listData={testFooterLists['1']} />
-          <FooterColumn listData={testFooterLists['2']} />
-          <FooterColumn listData={testFooterLists['3']} />
+        <div>
+          <VideoSkeleton />
+          <ul className="space-y-8 mt-10">
+            <li>
+              <FooterColumn listData={testFooterLists['1']} />
+            </li>
+            <li>
+              <FooterColumn listData={testFooterLists['2']} />
+            </li>
+            <li>
+              <FooterColumn listData={testFooterLists['3']} />
+            </li>
+          </ul>
           {/* <LineItem
             textContent="November 2021"
             cost="$7.99"
