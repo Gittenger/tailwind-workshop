@@ -4,7 +4,7 @@ const VideoSkeleton = ({}) => {
 	const wrapper = 'md:w-96 w-72'
 	const bigBox = 'w-full md:h-48 h-36 bg-gray-200'
 	const bottomBox = 'pt-2 flex flex-row justify-start items-center'
-	const circleBox = 'grid place-content-center p-2'
+	const circleBox = 'grid place-content-center py-2 pr-2'
 	const circle = 'rounded-full bg-gray-200 w-10 h-10'
 	const rectanglesBox =
 		'flex flex-col justify-end items-start flex-grow space-y-2'
