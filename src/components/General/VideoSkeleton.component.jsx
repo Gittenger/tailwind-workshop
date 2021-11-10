@@ -1,8 +1,8 @@
 import React from 'react'
 
 const VideoSkeleton = ({}) => {
-	const wrapper = 'w-96'
-	const bigBox = 'w-full h-48 bg-gray-200'
+	const wrapper = 'md:w-96 w-72'
+	const bigBox = 'w-full md:h-48 h-36 bg-gray-200'
 	const bottomBox = 'pt-2 flex flex-row justify-start items-center'
 	const circleBox = 'grid place-content-center p-2'
 	const circle = 'rounded-full bg-gray-200 w-10 h-10'

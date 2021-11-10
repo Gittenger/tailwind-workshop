@@ -51,7 +51,7 @@ const HomePageContent = () => {
 
   return (
     <>
-      <div className="w-4/5">
+      <div className="w-full grid grid-cols-1 justify-items-center px-5">
         {/* <HistoryItem /> */}
         {/* <IconListItem
           imgSrc={Bluetooth}
@@ -59,20 +59,23 @@ const HomePageContent = () => {
           orientation="right"
           countBubble="33"
         /> */}
-        <div>
+        <div className="w-full grid gap-4 grid-cols-1 sm:grid-cols-2 justify-items-center">
           <VideoSkeleton />
-          <ul className="space-y-8 mt-10">
-            <li>
-              <FooterColumn listData={testFooterLists['1']} />
-            </li>
-            <li>
-              <FooterColumn listData={testFooterLists['2']} />
-            </li>
-            <li>
-              <FooterColumn listData={testFooterLists['3']} />
-            </li>
-          </ul>
-          {/* <LineItem
+          <VideoSkeleton />
+          <VideoSkeleton />
+        </div>
+        <ul className="space-y-8 mt-10 w-full">
+          <li>
+            <FooterColumn listData={testFooterLists['1']} />
+          </li>
+          <li>
+            <FooterColumn listData={testFooterLists['2']} />
+          </li>
+          <li>
+            <FooterColumn listData={testFooterLists['3']} />
+          </li>
+        </ul>
+        {/* <LineItem
             textContent="November 2021"
             cost="$7.99"
             status={{ text: 'needs attention', code: 'warn' }}
@@ -88,7 +91,6 @@ const HomePageContent = () => {
             cost="$7.99"
             status={{ text: 'paid', code: 'good' }}
           /> */}
-        </div>
       </div>
     </>
   )
